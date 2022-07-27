@@ -1,0 +1,53 @@
+/*BODY*/
+body{
+	
+	background-color: #000000;
+	color: white;
+	font-size: 18px;
+}
+/*H1*/
+h1{
+	text-align: center;
+	font-family: verdana;
+	font-size: 2em;
+}
+
+/*Square Box*/
+
+.square{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;
+	animation: square 4s linear infinite alternate backwards running;
+}
+
+/*keyframes*/
+@keyframes square{
+	0%{
+		background-color: red;
+		top: 0px;
+		left: 0px;
+	}
+	25%{
+		background-color: green;
+		top: 500px;
+		left: 0px;
+	}
+	50%{
+		background-color: purple;
+		top: 500px;
+		left: 500px;
+		border-radius: 50%;
+	}
+	75%{
+		background-color: yellow;
+		top: 0px;
+		left: 500px;
+	}
+	100%{
+		background-color: white;
+		top: 0px;
+		left: 0px;
+	}
+}
